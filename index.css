@@ -1,0 +1,46 @@
+.grid {
+	display: grid;
+	grid-template-columns: 1fr repeat(20, auto-fill) 1fr;
+	grid-template-rows:1fr repeat(auto-fill, 5vmin) 1fr;
+	grid-gap: 1vmin
+}
+
+header {
+	background: blue;
+	
+	
+	grid-column-start: 1;
+	grid-column-end: -1;
+	
+	grid-column: 1 / -1;
+	
+	
+	grid-row-start: 1;
+	grid-row-end: 5;
+	
+	grid-row: 1 / span 4;
+	
+	
+	grid-area:
+	/*grid-area: 1 / 1 / -1 / 4;*/
+}
+
+main {
+	background: yellow;
+	
+	
+	grid-column-start: 5;
+	grid-column-end: -5;
+	
+	grid-column: 5 / -5;
+	
+	
+	grid-row-start: 5;
+	grid-row-end: -5;
+	
+	grid-row: 5 / -5;
+	
+	
+	grid-area: 
+	/*grid-area: 1 / 4 / -1 / 20;*/
+}
