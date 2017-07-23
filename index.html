@@ -22,27 +22,40 @@
 	<body class="grid">
 
 		<header>
-			<nav>
-			</nav>
+			<h1>
+				Search Some Stuff...and Things!
+			</h1>
 		</header>
 
 		<main>
 
-			<sidebar>
+			<sidebar class="results">
+
+				<!--<div class="searchBox">
+					<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Special:Random">
+					Get a Random Article...or Search <br>
+					</a>
+
+					<input type="text" name="search-query" ondblclick="search()" />
+
+					<pre id="result"></pre>
+				</div>-->
+
+				<form class="searchForm" method="GET" action="https://en.wikipedia.org/wiki/Special:Random" target="viewer">
+				<!--<form class="searchForm" method="GET" target="viewer">-->
+					<!--<label for="searchBox">Search</label>-->
+					<h3>
+						Get a Random Article...or Search
+					</h3>
+					<input type="text" name="searchBox" placeholder="Keywords">
+					<button type="submit" name="submitButton" onclick="wikiSearch()">Get Random!</button>
+				</form>
+
 			</sidebar>
 
-			<section>
-				<a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">
-				Get a Random Article
-				</a>
-				
-				<input type="text" name="search-query" ondblclick="search()" />
-				
-				<pre id="result"></pre>
-			</section>
-
-			<section>
-			</section>
+			<iframe class="viewer" src="" name="viewer" frameborder="0">
+				alternative content for browsers which do not support iframe
+			</iframe>
 
 			<section>
 			</section>
