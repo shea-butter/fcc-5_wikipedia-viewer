@@ -45,7 +45,6 @@ main {
 .results {
 	background: linear-gradient(to top, #eaecf0, #b0c4de);
 	border-top: 1px solid black;
-	border-bottom: 1px solid black;
 	border-right: 1px solid black;
 	
 	display: flex;
@@ -191,6 +190,9 @@ footer p {
 	}
 
 	.results {
+		border-bottom: 1px solid black;
+		border-right: none;
+		
 		grid-area: 1 / 1 / 2 / 2;
 	}
 
