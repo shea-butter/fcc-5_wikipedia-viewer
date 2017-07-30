@@ -22,7 +22,7 @@ function wikiSearch() {
 		oldResults.forEach(()=> {
 			results.removeChild(results.lastChild);
 		});
-		
+
 		searchForm.action = `https://en.m.wikipedia.org/wiki/Special:Random`;
 		searchForm.submit();
 	} else {
@@ -31,12 +31,6 @@ function wikiSearch() {
 }
 
 function getResults(searchTerms) {
-	// const init = {
-	// 	cache: `no-cache`,
-	// 	method: `GET`,
-	// 	mode: `no-cors`,
-	// };
-
 	const apiBaseUrl = `https://en.wikipedia.org/w/api.php?`;
 	const apiOrigin = `&origin=*`;
 	const apiAction = `&action=opensearch`;
@@ -52,7 +46,6 @@ function getResults(searchTerms) {
 }
 
 function showResults(searchTerms) {
-
 	getResults(searchTerms)
 		.then((response)=> {
 			const results = document.querySelector(`.results`);

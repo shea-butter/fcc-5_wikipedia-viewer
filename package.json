@@ -1,0 +1,23 @@
+{
+  "name": "fcc-5_wikipedia-viewer",
+  "version": "1.0.0",
+  "description": "A Wikipedia Viewer",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d /",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheafitzek/fcc-5_wikipedia-viewer.git"
+  },
+  "author": "Shea Fitzek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheafitzek/fcc-5_wikipedia-viewer/issues"
+  },
+  "homepage": "https://github.com/sheafitzek/fcc-5_wikipedia-viewer",
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  }
+}
