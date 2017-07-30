@@ -191,6 +191,7 @@ footer p {
 
 	.results {
 		border-bottom: 1px solid black;
+		border-right: none;
 		
 		grid-area: 1 / 1 / 2 / 2;
 	}
