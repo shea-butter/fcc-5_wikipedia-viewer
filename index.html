@@ -5,13 +5,15 @@
 	<head>
 
 		<meta charset="utf-8">
-		<title>Wikipedia App </title>
+		<title>Wikipedia Viewer</title>
 		<meta name="description" content="Wikipedia Search App">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
-		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellefair|Rakkas|Share"> -->
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
 
 		<!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
 
@@ -63,6 +65,30 @@
 		</main>
 
 		<footer class="main-footer">
+			<div id="social-logos" class="col-xs-12">
+				<ul class="list-reset">
+					<li id="github" class="inline-block h2 ml1 mr1"><a href="https://github.com/sheafitzek" rel="noopener noreferrer" target="_blank"><i class="fa fa-github fa-fw " aria-hidden="true "></i></a></li>
+					<li id="codepen" class="inline-block h2 ml1 mr1"><a href="https://codepen.io/sheafitzek/" rel="noopener noreferrer" target="_blank"><i class="fa fa-codepen fa-fw " aria-hidden="true "></i></a></li>
+					<li id="linkedin" class="inline-block h2 ml1 mr1"><a href="https://www.linkedin.com/in/sheafitzek" rel="noopener noreferrer" target="_blank"><i class="fa fa-linkedin fa-fw " aria-hidden="true "></i></a></li>
+					<li id="twitter" class="inline-block h2 ml1 mr1"><a href="https://twitter.com/sheafitzek" rel="noopener noreferrer" target="_blank"><i class="fa fa-twitter fa-fw " aria-hidden="true "></i></a></li>
+					<li id="facebook" class="inline-block h2 ml1 mr1"><a href="https://www.facebook.com/shea.fitzek" rel="noopener noreferrer" target="_blank"><i class="fa fa-facebook fa-fw " aria-hidden="true "></i></a></li>
+					<li id="medium" class="inline-block h2 ml1 mr1"><a href="https://medium.com/@shea_butter" rel="noopener noreferrer" target="_blank"><i class="fa fa-medium fa-fw " aria-hidden="true "></i></a></li>
+					<li id="meetup" class="inline-block h2 ml1 mr1"><a href="https://www.meetup.com/members/209350641/" rel="noopener noreferrer" target="_blank"><i class="fa fa-meetup fa-fw " aria-hidden="true "></i></a></li>
+					<li id="slack" class="inline-block h2 ml1 mr1"><a href="https://sheafitzek.slack.com" rel="noopener noreferrer" target="_blank"><i class="fa fa-slack fa-fw " aria-hidden="true "></i></a></li>
+					<li id="trello" class="inline-block h2 ml1 mr1"><a href="https://trello.com/sheafitzek" rel="noopener noreferrer" target="_blank"><i class="fa fa-trello fa-fw " aria-hidden="true "></i></a></li>
+					<li id="free-code-camp" class="inline-block h2 ml1 mr1"><a href="https://www.freecodecamp.com/sheafitzek" rel="noopener noreferrer" target="_blank"><i class="fa fa-free-code-camp fa-fw " aria-hidden="true "></i></a></li>
+				</ul>
+			</div>
+
+			<p>© 2017 Shea Fitzek - All Rights Reserved | <span class="info" onclick="openModal()">page info</span></p>
+
+			<div class="modal">
+				<div class="modal-content">
+					<span class="close" onclick="closeModal()">&times;</span>
+					<p class="h2">This was coded as part of the <a href="https://freecodecamp.com" rel="noopener noreferrer" target="_blank">FreeCodeCamp</a> curriculum</p>
+					<p class="h2">Content delivered by the <a href="https://wikipedia.org" rel="noopener noreferrer" target="_blank">Wikipedia</a> API</p>
+				</div>
+			</div>
 		</footer>
 
 		<script type="text/javascript" src="index.js"></script>
